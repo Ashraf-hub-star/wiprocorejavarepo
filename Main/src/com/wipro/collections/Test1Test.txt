@@ -1,0 +1,39 @@
+
+
+### Summary of Test Cases in `Test1Test` File:
+
+| **Test Method**        | **Scenario**                                  | **Expected Behavior**                                      |
+|-------------------------|----------------------------------------------|-----------------------------------------------------------|
+| `testSortedSetSorting`  | Verify sorting                               | Set is sorted in ascending order.                         |
+| `testHeadSet`           | Verify `headSet(234)`                        | Returns elements less than `234`.                         |
+| `testTailSet`           | Verify `tailSet(152)`                        | Returns elements greater than or equal to `152`.          |
+| `testSubSet`            | Verify `subSet(67, 234)`                     | Returns elements in the range `[67, 234)`.                |
+| `testTypeSafety`        | Ensure type consistency                      | Adding mixed types throws `ClassCastException`.           |
+| `testEmptySetBehavior`  | Handle empty set                             | Throws `NoSuchElementException` for `first()` or `last()`. |
+| `testDuplicateHandling` | Verify duplicate handling                    | Duplicate elements are ignored.                           |
+
+---
+
+### Why Are These Scenarios Important?
+
+1. **Robustness**: Testing edge cases like empty sets or duplicates ensures the program behaves as expected in all situations.
+2. **Correctness**: Validates that each method behaves as documented, preventing errors in logic.
+3. **Maintainability**: If the logic changes in the future, these tests will catch regressions.
+4. **Type Safety**: Ensures that only elements of the same type can exist in the `SortedSet`.
+
+Let me know if you'd like further clarification or additional examples! 😊
+
+
+1.Scenario 2: Verify HeadSet (testHeadSet)
+Objective:
+To ensure that the headSet(234) method returns all elements strictly less than 234.
+
+
+2.Scenario 3: Verify TailSet (testTailSet)
+Objective:
+To ensure that the tailSet(152) method returns all elements greater than or equal to 152.
+
+
+3.Scenario 4: Verify SubSet (testSubSet)
+Objective:
+To ensure that the subSet(67, 234) method returns all elements in the range [67, 234) (inclusive of 67 but exclusive of 234).
